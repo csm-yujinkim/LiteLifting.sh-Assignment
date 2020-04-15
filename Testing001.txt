@@ -1,0 +1,9 @@
+This list of hints will hopefully help you understand how to get the values for XXX in each of the lines of output above. If you're still confused, you can send me an email!
+1. wc anyone?
+2. tr -d before wc ...
+3. Expensive carrot? (An empty line is one that has no characters between the beginning of the line and the end of the line)
+4. Remove newlines with tr, and characters not in 0-9a-zA-Z with sed :)
+Slashes in the output are important (so we can see an empty string versus a whitespace). 5. Try replacing all newlines in the file with empty spaces before using grep, to capture
+the phrase split across two lines.
+You can use the exit status of the grep command directly (it exits with 0 if a match is found, 1 otherwise). Also, the -q option can be used to suppress the grep output.
+
